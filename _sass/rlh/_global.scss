@@ -1,0 +1,17 @@
+body {
+  background: #000;
+  color: #FFF;
+}
+
+.container {
+  @include outer-container;
+  padding: 1em;
+  @include media($large-screens) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.pull-right {
+  float: right;
+}

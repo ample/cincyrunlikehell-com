@@ -1,0 +1,17 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$column:            30px;
+$gutter:            10px;
+$grid-columns:      24;
+$max-width:         950px;
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 720px;
+
+$mobile-min: ($mobile-breakpoint - 1px);
+$tablet-min: ($tablet-breakpoint - 1px);
+$desktop: new-breakpoint(min-width $tablet-breakpoint);
+$tablet: new-breakpoint(min-width $mobile-breakpoint max-width $tablet-min 8);
+$mobile: new-breakpoint(max-width $mobile-min 6);
+$small-screens: new-breakpoint(max-width $tablet-min);
+$large-screens: new-breakpoint(min-width $max-width);

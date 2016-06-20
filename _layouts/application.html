@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ample http://helloample.com/" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,regular,bold" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/runlikehell/favicon.gif" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+
+  <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="{{ "/javascripts/application.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
