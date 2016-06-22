@@ -11,26 +11,10 @@ $ ->
       if $('#js-navigation-menu').is(':hidden')
         $('#js-navigation-menu').removeAttr 'style'
 
-
   expanderTrigger = document.getElementById('js-expander-trigger')
   expanderContent = document.getElementById('js-expander-content')
   $('#js-expander-trigger').click ->
     $(this).toggleClass 'expander-hidden'
-
-  $('#modal-').on 'change', ->
-    if $(this).is(':checked')
-      $('body').addClass 'modal-open'
-    else
-      $('body').removeClass 'modal-open'
-    return
-  $('.modal-fade-screen, .modal-close').on 'click', ->
-    $('.modal-state:checked').prop('checked', false).change()
-    return
-  $('.modal-inner').on 'click', (e) ->
-    e.stopPropagation()
-    return
-  return
-
 
   do (jQuery) ->
     jQuery.mark = jump: (options) ->
@@ -50,3 +34,17 @@ $ ->
   jQuery ->
     jQuery.mark.jump()
     return
+
+  $('#modal-1').on 'change', ->
+    if $(this).is(':checked')
+      $('body').addClass 'modal-open'
+    else
+      $('body').removeClass 'modal-open'
+    return
+  $('.modal-fade-screen, .modal-close').on 'click', ->
+    $('.modal-state:checked').prop('checked', false).change()
+    return
+  $('.modal-inner').on 'click', (e) ->
+    e.stopPropagation()
+    return
+  return

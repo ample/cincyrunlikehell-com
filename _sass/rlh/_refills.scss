@@ -135,6 +135,10 @@
       width: 50%;
     }
 
+    *:not(button) {
+      color: $base-font-color;
+    }
+
     h1, h2, h3, h4, h5, h6 {
       background: transparent;
       color: #8a131a;
@@ -167,7 +171,6 @@
 
     ol, ul {
       margin-bottom: .75em;
-      color: $base-font-color;
 
       li {
         padding-bottom: .4em;
@@ -175,7 +178,6 @@
     }
 
     p {
-      color: $base-font-color;
       line-height: $base-line-height;
     }
 
