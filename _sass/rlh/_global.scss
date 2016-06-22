@@ -54,6 +54,13 @@ p {
   }
 }
 
+main {
+  padding-top: 7em;
+  @include media ($large-screens) {
+    padding-top: 5em;
+  }
+}
+
 strong {
   font-weight: bold;
 }

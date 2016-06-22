@@ -1,6 +1,5 @@
 #intro {
   background: url(/images/intro_rlh2016.jpg) center top no-repeat;
-  margin-top: 75px;
   min-height: 560px;
   position: relative;
 
@@ -42,5 +41,9 @@
     padding: modular-scale(2) 0;
     position: absolute;
     width: 100%;
+
+    @include media ($mobile) {
+      position: relative;
+    }
   }
 }

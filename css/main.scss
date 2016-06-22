@@ -9,14 +9,14 @@
 @import "neat/neat";
 @import "base/base";
 @import "rlh/mixins";
-@import "rlh/legacy";
+@import "rlh/refills";
+// @import "rlh/legacy";
 @import "rlh/global";
-@import "rlh/index";
-@import "rlh/navigation";
+@import "rlh/header-site";
 @import "rlh/intro";
 @import "rlh/race";
 @import "rlh/party";
 @import "rlh/cause";
 @import "rlh/sponsor";
 @import "rlh/connect";
-@import "rlh/refills";
+@import "rlh/footer-site";
