@@ -1,0 +1,21 @@
+.expander {
+  .expander-trigger {
+    cursor: pointer;
+    display: block;
+    user-select: none;
+    &::before {
+      content: "\f107";
+      font-family: "FontAwesome";
+      margin-right: 0.5em;
+    }
+  }
+  .expander-hidden {
+    &::before {
+      content: "\f105";
+      font-family: "FontAwesome";
+    }
+  }
+  .expander-hidden + .expander-content {
+    display: none;
+  }
+}

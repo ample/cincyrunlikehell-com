@@ -11,3 +11,10 @@ $ ->
       if $('#js-navigation-menu').is(':hidden')
         $('#js-navigation-menu').removeAttr 'style'
 
+
+  expanderTrigger = document.getElementById('js-expander-trigger')
+  expanderContent = document.getElementById('js-expander-content')
+  $('#js-expander-trigger').click ->
+    $(this).toggleClass 'expander-hidden'
+    return
+  return

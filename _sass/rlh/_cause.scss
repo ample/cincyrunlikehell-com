@@ -31,11 +31,11 @@
   }
 
   #story {
-    margin-top: modular-scale(1);
+    margin-top: modular-scale(3);
     @include clearfix;
     .story--img {
-      float: left;
-      padding-right: 1em;
+      float: right;
+      padding-left: 1em;
 
       @include media($mobile) {
         float: none;

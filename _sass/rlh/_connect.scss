@@ -2,7 +2,7 @@
   background: url(/images/connect_bg.gif) left bottom no-repeat #221200;
 
   a {
-    @include section-links(#8a4e41);
+    @include section-links(#b96756);
   }
 
   div.col-l {
@@ -49,26 +49,3 @@
     }
   }
 }
-
-
-
-
-// #connect {
-//   background: url(/images/connect_bg.gif) 0 0;
-// }
-
-// #about_cf {
-//   color: #649dc5;
-//   border-left: 1px solid #649dc5;
-//   padding-top: 32px;
-//   padding-bottom: 20px;
-// }
-//
-// #about_cf h5 {
-//   color: #649dc5;
-//   padding-bottom: 10px;
-// }
-//
-// #about_cf iframe {
-//   padding-bottom: 10px;
-// }
