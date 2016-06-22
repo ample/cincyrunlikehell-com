@@ -46,5 +46,29 @@
       position: absolute;
       border: 10px solid #fff;
     }
+
+    .incoming {
+      display:none;
+    }
+
+    .incoming.active {
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-duration: 0.5s;
+      -webkit-transform: rotate(0) scale(1) translate(0,0);
+      opacity: 1;
+    }
+
+    .incoming.active {
+      -webkit-animation-name: toss;
+    }
+
+    @-webkit-keyframes toss {
+      0% { -webkit-transform: rotate(-30deg) scale(1.3) translate(-20px,-250px); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+      100% { -webkit-transform: rotate(0deg) scale(1) translate(0,0); opacity: 1; }
+    }
+
+    .gallery_list {
+      display: none;
+    }
   }
 }

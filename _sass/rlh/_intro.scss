@@ -13,7 +13,7 @@
     @include clearfix;
     .intro-footer--img {
       float: left;
-      padding-right: 1em;
+      padding-right: modular-scale(3);
 
       @include media($mobile) {
         float: none;
@@ -24,10 +24,10 @@
       }
     }
     .intro-footer--text {
-      padding: 2em 0;
+      padding: modular-scale(4) 0 0;
 
       @include media($mobile) {
-        padding: 0;
+        padding: modular-scale(2) 0;
       }
     }
   }

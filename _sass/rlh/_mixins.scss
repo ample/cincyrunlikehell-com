@@ -2,7 +2,7 @@
   color: $link-color;
 
   &:hover {
-    color: darken($link-color, 20%);
+    color: lighten($link-color, 20%);
   }
 
   &.btn-details {
