@@ -1,0 +1,50 @@
+#race {
+  background: url(/images/race_bg.jpg) 0 0;
+
+  a {
+    @include section-links(#89c2ea);
+  }
+
+  div.col-l {
+    @include media($small-screens) {
+      padding-bottom: modular-scale(5);
+    }
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+  }
+
+  div.col-r {
+    $section-text-color: #666;
+    color: $section-text-color;
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+    p {
+      font-size: .8em;
+    }
+  }
+
+  #race_gallery {
+    margin: 0 0 5px 0;
+    padding: 0;
+    .gallery_nav {
+      padding-top: 300px;
+      p {
+        margin-top: 2em;
+      }
+      .icon {
+        float: left;
+        margin-top: -0.5em;
+        padding-right: .5em;
+      }
+    }
+    .incoming,
+    .outgoing {
+      width: 410px;
+      height: 275px;
+      position: absolute;
+      border: 10px solid #fff;
+    }
+  }
+}

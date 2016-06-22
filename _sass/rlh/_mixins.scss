@@ -1,0 +1,17 @@
+@mixin section-links($link-color) {
+  color: $link-color;
+
+  &:hover {
+    color: darken($link-color, 20%);
+  }
+
+  &.btn-details {
+    color: $action-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($action-color, 10%);
+    }
+  }
+}

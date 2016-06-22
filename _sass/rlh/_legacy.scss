@@ -1,16 +1,16 @@
-* {
-  outline: none;
-}
+// * {
+//   outline: none;
+// }
+//
+// a:focus {
+//   color: #FFF;
+// }
 
-a:focus {
-  color: #FFF;
-}
-
-body {
-  background: #000;
-  font-family: Helvetica, Arial, Sans-Serif;
-  font-size: 12px;
-}
+// body {
+//   background: #000;
+//   font-family: Helvetica, Arial, Sans-Serif;
+//   font-size: 12px;
+// }
 
 #header_wrapper {
   position: fixed;
@@ -123,64 +123,64 @@ body {
 }
 /* Section Generic */
 
-h3, h4, h5 {
-  font-family: 'Yanone Kaffeesatz', Helvetica, Arial, Sans-Serif;
-}
+// h3, h4, h5 {
+//   font-family: 'Yanone Kaffeesatz', Helvetica, Arial, Sans-Serif;
+// }
 
-h2 {
-  background: #fff;
-  background: -webkit-gradient(linear, left top, 80% top, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
-  font-family: Helvetica, Arial, Sans-Serif;
-  font-weight: bold;
-  font-size: 14px;
-  margin: 0 0 35px 0;
-  padding: 5px 0;
-  text-shadow: #fff 1px 1px 1px;
-}
+// h2 {
+//   background: #fff;
+//   background: -webkit-gradient(linear, left top, 80% top, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+//   font-family: Helvetica, Arial, Sans-Serif;
+//   font-weight: bold;
+//   font-size: 14px;
+//   margin: 0 0 35px 0;
+//   padding: 5px 0;
+//   text-shadow: #fff 1px 1px 1px;
+// }
+//
+// h2 span {
+//   width: 950px;
+//   display: block;
+//   margin: 0 auto;
+//   text-align: left;
+// }
+//
+// h3 {
+//   color: #fff;
+//   font-size: 48px;
+//   line-height: 1.1em;
+//   padding: 40px 0 10px 0;
+//   margin: 0;
+// }
+//
+// h4 {
+//   color: #fff;
+//   font-size: 42px;
+//   line-height: 1.1em;
+//   padding: 0 0 10px 0;
+//   margin: 0;
+// }
+//
+// h5 {
+//   color: #fff;
+//   font-size: 32px;
+//   font-weight: lighter;
+//   line-height: 1.1em;
+//   padding: 5px 0 5px 0;
+//   margin: 0;
+// }
 
-h2 span {
-  width: 950px;
-  display: block;
-  margin: 0 auto;
-  text-align: left;
-}
+// .small_text {
+//   font-size: 90%;
+// }
 
-h3 {
-  color: #fff;
-  font-size: 48px;
-  line-height: 1.1em;
-  padding: 40px 0 10px 0;
-  margin: 0;
-}
-
-h4 {
-  color: #fff;
-  font-size: 42px;
-  line-height: 1.1em;
-  padding: 0 0 10px 0;
-  margin: 0;
-}
-
-h5 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: lighter;
-  line-height: 1.1em;
-  padding: 5px 0 5px 0;
-  margin: 0;
-}
-
-.small_text {
-  font-size: 90%;
-}
-
-a {
-  color:#fff;
-}
-
-a:hover {
-  color:#ccc;
-}
+// a {
+//   color:#fff;
+// }
+//
+// a:hover {
+//   color:#ccc;
+// }
 
 .big_link, .overview_link, .details_link, .ui-dialog-titlebar-close  {
   background: url(/images/arrow_red.png) 0 2px no-repeat;
@@ -193,10 +193,10 @@ a:hover {
   display: block;
 }
 
-.details_link {
-  background-image: url(/images/arrow_orange.png);
-  color: #f6921e;
-}
+// .details_link {
+//   background-image: url(/images/arrow_orange.png);
+//   color: #f6921e;
+// }
 
 .big_link:hover, .details_link:hover {
   background-image: url(/images/arrow_white.png) no-repeat;
@@ -239,26 +239,26 @@ a:hover {
   padding-top: 15px;
 }
 
-.icon {
-  margin-top: 5px;
-}
+// .icon {
+//   margin-top: 5px;
+// }
+//
+// .icon img {
+//   vertical-align: middle;
+//   padding-left: 8px;
+// }
 
-.icon img {
-  vertical-align: middle;
-  padding-left: 8px;
-}
-
-.icon a, .small_link {
-  font-family: Helvetica, Arial, Sans-Serif;
-  font-weight: bold;
-  font-size: 12px;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.icon a:hover, .small_link:hover {
-  color: #f6921e;
-}
+// .icon a, .small_link {
+//   font-family: Helvetica, Arial, Sans-Serif;
+//   font-weight: bold;
+//   font-size: 12px;
+//   color: #fff;
+//   text-decoration: underline;
+// }
+//
+// .icon a:hover, .small_link:hover {
+//   color: #f6921e;
+// }
 
 .submit {
   font-family: Helvetica, Arial, Sans-Serif;
@@ -309,74 +309,16 @@ a:hover {
 
 
 /* Intro */
-
-#intro {
-  background: #000;
-  height: 560px;
-  overflow: hidden;
-  padding-bottom: 0;
-}
-
-#intro .wrapper {
-  margin-top: 75px;
-  background: url(/images/intro_rlh2014.jpg) center top no-repeat;
-  min-height: 560px;
-}
-
-#intro h3, #intro p { text-shadow: none; color: #FFF; }
-
-#intro h3 { padding-top: 220px; }
-#intro p { padding-bottom: 5px; margin-bottom: 10px; }
-
-#intro .intro_links {
-  margin-top: 15px;
-}
-#intro .intro_links .details_link {
-  font-size: 14px;
-  color: #FFF;
-  background-image: url(/images/arrow_white.png);
-  margin-bottom: 10px;
-}
+// Moved!!!
 
 /* Race */
-
-#race {
-  background: url(/images/race_bg.jpg) 0 0;
-}
-
-#race_gallery {
-  margin: 0 0 5px 0;
-  padding: 0;
-}
-
-
-#race_gallery .gallery_nav {
-  padding-top: 350px;
-}
-
-#race_gallery .incoming,
-#race_gallery .outgoing {
-  width: 410px;
-  height: 275px;
-  position: absolute;
-  margin-top: 50px;
-  border: 10px solid #fff;
-}
+// Moved!!!
 
 /* Party */
-
-#party {
-  background: url(/images/party_bg.jpg) 0 30px;
-}
+// Moved!!!
 
 /* Cause */
-
-#cause {
-  background: url(/images/cause_bg.gif) 0 0;
-}
-.nolan_big {
-  margin-top: -20px;
-}
+// Moved!!!
 
 /* Sponsor */
 

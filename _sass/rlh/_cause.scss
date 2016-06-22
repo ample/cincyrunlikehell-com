@@ -1,0 +1,72 @@
+#cause {
+  background: url(/images/cause_bg.gif) 0 0;
+
+  a {
+    @include section-links(#89c2ea);
+  }
+
+  div.col-l {
+    @include media($small-screens) {
+      padding-bottom: modular-scale(5);
+    }
+    @include media($desktop) {
+      @include span-columns(7);
+    }
+  }
+
+  div.col-r {
+    $section-text-color: #a1bfd0;
+    color: $section-text-color;
+    @include media($desktop) {
+      @include span-columns(4);
+      @include shift(1);
+    }
+
+    h4 {
+      color: $section-text-color;
+    }
+    p {
+      font-size: .9em;
+    }
+  }
+
+  #story {
+    margin-top: modular-scale(1);
+    @include clearfix;
+    .story--img {
+      float: left;
+      padding-right: 1em;
+
+      @include media($mobile) {
+        float: none;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .story--text {
+      padding: 2em 0;
+
+      @include media($mobile) {
+        padding: 0;
+      }
+    }
+  }
+
+  .videoWrapper {
+    height: 0;
+  	padding-bottom: 47%;
+  	padding-top: 25px;
+    position: relative;
+  	margin-bottom: 1em;
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

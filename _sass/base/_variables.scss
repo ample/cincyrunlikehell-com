@@ -3,8 +3,8 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: $font-stack-helvetica;
+$heading-font-family: 'Yanone Kaffeesatz', Helvetica, Arial, Sans-Serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -20,14 +20,15 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
+$blue: #649dc5;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$yellow: #f6921e;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $yellow;
 
 // Border
 $base-border-color: $light-gray;

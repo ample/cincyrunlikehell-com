@@ -1,0 +1,22 @@
+#party {
+  background: url(/images/party_bg.jpg) 0 0;
+
+  a {
+    @include section-links(#89c2ea);
+  }
+
+  div.col-l {
+    @include media($small-screens) {
+      padding-bottom: modular-scale(2);
+    }
+    @include media($desktop) {
+      @include span-columns(5);
+    }
+  }
+
+  div.col-r {
+    @include media($desktop) {
+      @include span-columns(7);
+    }
+  }
+}
