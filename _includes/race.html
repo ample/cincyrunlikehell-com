@@ -7,10 +7,20 @@
         <p>Running in costume with hundreds of other charitable souls, is nothing like plodding away on the treadmill. This is 3.1 miles of people-watching delight. Join in on the most unique 5K of the year.</p>
         <p>The gun goes off at 7:30. The start (and finish) line is at 3617 Woodburn Ave.</p>
         <p>New year, new route. This year, we are running from Dana Ave. to Victory Parkway into the cemetery and back!</p>
-        <p>
-          <a href="#fees" rel="facebox" class="btn-details" target="_blank"><i class="fa fa-angle-right"></i> Fees &amp; Fundraising</a><br>
-          <a href="http://fightcf.cff.org/rlh" class="btn-details" target="_blank"><i class="fa fa-angle-right"></i> Register to Run or Start a Team</a>
-        </p>
+
+        <div class="modal">
+          <label for="modal-fees">
+            <div class="modal-trigger btn-details"><i class="fa fa-angle-right"></i> Fees &amp; Fundraising</div>
+          </label>
+          <input class="modal-state" id="modal-fees" type="checkbox" />
+          <div class="modal-fade-screen">
+            <div class="modal-inner">
+              <div class="modal-close" for="modal-fees"></div>
+              {% include modal-fees.html %}
+              </div>
+          </div>
+        </div>
+        <a href="http://fightcf.cff.org/rlh" class="btn-details" target="_blank"><i class="fa fa-angle-right"></i> Register to Run or Start a Team</a>
       </section>
     </div>
     <div class="col-r">
