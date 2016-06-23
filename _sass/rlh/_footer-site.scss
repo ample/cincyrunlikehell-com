@@ -1,0 +1,20 @@
+#footer-site {
+  color: #666;
+  font-size: 90%;
+  padding: modular-scale(5) 0;
+
+  li {
+    display: inline-block;
+    margin-top: modular-scale(3);
+    padding-right: modular-scale(1);
+    a {
+      text-decoration: none;
+    }
+  }
+  p a {
+    @include section-links(#999);
+  }
+  small {
+    font-size: 80%;
+  }
+}

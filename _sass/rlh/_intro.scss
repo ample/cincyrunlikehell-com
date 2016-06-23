@@ -1,0 +1,49 @@
+#intro {
+  background: url(/images/intro_rlh2016.jpg) center top no-repeat;
+  min-height: 560px;
+  position: relative;
+
+  a {
+    @include section-links(#89c2ea);
+  }
+
+  #intro-footer {
+    margin-top: modular-scale(1);
+    @include clearfix;
+    .intro-footer--img {
+      float: left;
+      padding-right: modular-scale(3);
+
+      @include media($mobile) {
+        float: none;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .intro-footer--text {
+      padding: modular-scale(4) 0 0;
+
+      @include media($mobile) {
+        padding: modular-scale(2) 0;
+      }
+    }
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+
+  .wrapper {
+    background-color: rgba(#000, 0.8);
+    bottom: 0;
+    padding: modular-scale(2) 0;
+    position: absolute;
+    width: 100%;
+
+    @include media ($mobile) {
+      position: relative;
+    }
+  }
+}

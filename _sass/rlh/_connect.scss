@@ -1,0 +1,51 @@
+#connect {
+  background: url(/images/connect_bg.gif) left bottom no-repeat #221200;
+
+  a {
+    @include section-links(#b96756);
+  }
+
+  div.col-l {
+    @include media($small-screens) {
+      padding-bottom: modular-scale(5);
+    }
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+  }
+
+  div.col-r {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+    a, p {
+      font-size: .9em;
+    }
+  }
+
+  #signup {
+    form {
+      margin-top: modular-scale(3);
+      a {
+        font-size: .8em;
+      }
+      input {
+        width: 100%;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #social {
+    p {
+      margin: 1.5em 0;
+    }
+    .icon {
+      float: left;
+      margin-top: -0.4em;
+      padding-right: .5em;
+    }
+  }
+}

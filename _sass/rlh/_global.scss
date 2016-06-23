@@ -1,17 +1,72 @@
+a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 body {
   background: #000;
   color: #FFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  font-family: $base-font-family;
+  font-weight: bold;
+}
+
+h2 {
+  background-image: -webkit-linear-gradient(top, rgba(#000, 0.8), rgba(#000, 0)); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(top, rgba(#000, 0.8), rgba(#000, 0)); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(top, rgba(#000, 0.8), rgba(#000, 0)); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, rgba(#000, 0.8), rgba(#000, 0)); /* Standard syntax; must be last */
+  color: rgba(#fff, 0.3);
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  padding: 1.6em 1.6em 3em;
+}
+
+h3, h4, h5, h6 {
+  color: white;
+  font-family: $heading-font-family;
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: modular-scale(5);
+  margin: 0 0 .4em;
+}
+
+h4 {
+  font-size: modular-scale(4);
+  margin: 0 0 .5em;
+}
+
+h5 {
+  font-size: modular-scale(3);
+  margin: 0 0 .2em;
+}
+
+p {
+  &.lead {
+    font-size: 1.15em;
+    line-height: 1.15em;
+  }
+}
+
+main {
+  padding-top: 7em;
+  @include media ($large-screens) {
+    padding-top: 5em;
+  }
+}
+
+strong {
+  font-weight: bold;
 }
 
 .container {
   @include outer-container;
-  padding: 1em;
-  @include media($large-screens) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.pull-right {
-  float: right;
+  padding: 0 1.6em 3em;
 }

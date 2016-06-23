@@ -8,8 +8,14 @@
 @import "rlh/grid-settings";
 @import "neat/neat";
 @import "base/base";
-@import "rlh/legacy";
+@import "rlh/mixins";
+@import "rlh/refills";
 @import "rlh/global";
-@import "rlh/index";
-@import "rlh/navigation";
-
+@import "rlh/header-site";
+@import "rlh/intro";
+@import "rlh/race";
+@import "rlh/party";
+@import "rlh/cause";
+@import "rlh/sponsor";
+@import "rlh/connect";
+@import "rlh/footer-site";
