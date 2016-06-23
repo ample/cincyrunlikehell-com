@@ -28,8 +28,11 @@
   #race_gallery {
     margin: 0 0 5px 0;
     padding: 0;
+    .slick-initialized {
+      border: 10px solid #fff;
+      margin-bottom: 20px;
+    }
     .gallery_nav {
-      padding-top: 300px;
       p {
         margin-top: 2em;
       }
