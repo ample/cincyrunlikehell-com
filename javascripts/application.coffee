@@ -1,7 +1,36 @@
 ---
 ---
 
+if typeof window.RLH is 'undefined' then window.RLH = {}
+
+class RLH.Modal
+
+  constructor: ->
+    @events()
+
+  events: ->
+    $('[data-role=modal-trigger]').on 'click', @open
+    $('.modal-fade-screen, .modal-close').on 'click', @close
+    $('.modal-state').on 'change', @changeState
+
+  open: ->
+    id = $(this).attr('href')
+    $(id).find('.modal-state').prop('checked', true)
+    false
+
+  close: ->
+    $('.modal-state:checked').prop('checked', false).change()
+
+  changeState: ->
+    if $(this).is(':checked')
+      $('body').addClass 'modal-open'
+    else
+      $('body').removeClass 'modal-open'
+
+
 $ ->
+
+  new RLH.Modal()
 
   menuToggle = $('#js-mobile-menu').unbind()
   $('#js-navigation-menu').removeClass 'show'
@@ -35,16 +64,3 @@ $ ->
     jQuery.mark.jump()
     return
 
-  $('#modal-1').on 'change', ->
-    if $(this).is(':checked')
-      $('body').addClass 'modal-open'
-    else
-      $('body').removeClass 'modal-open'
-    return
-  $('.modal-fade-screen, .modal-close').on 'click', ->
-    $('.modal-state:checked').prop('checked', false).change()
-    return
-  $('.modal-inner').on 'click', (e) ->
-    e.stopPropagation()
-    return
-  return
