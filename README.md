@@ -1,0 +1,3 @@
+When serving locally, you'll probably need to pass `baseurl` as command line arg...
+
+    $ bundle exec jekyll serve --baseurl /

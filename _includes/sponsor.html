@@ -36,7 +36,7 @@
       <div id="sponsor-drawer" class="expander-content">
         <div class="col-l">
           <h4>Be a sponsor</h4>
-          <p>If you are interested in partnering with Run Like Hell, please call the CF Foundation at <a href="tel:5135339300">513-533-9300 (ext 12).</a></p>
+          <p>If you are interested in partnering with Run Like Hell, please call the CF Foundation at <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }} (ext {{ site.contact.phone_ext }}).</a></p>
         </div>
         <div class="col-r">
           <h4>Volunteer</h4>
@@ -60,7 +60,7 @@
             </ul>
           </div>
           <div class="list-footer">
-            <p><a href="mailto:lmorgan@cff.org">Talk to Laura</a> if you'd like to help.</p>
+            <p><a href="mailto:{{ site.contact.email }}">Talk to {{ site.contact.name | split: ' ' }}</a> if you'd like to help.</p>
           </div>
         </div>
       </div>
