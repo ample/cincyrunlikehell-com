@@ -69,10 +69,20 @@ class RLH.Flickr
     false
 
 
+class RLH.Drawers
+
+  constructor: ->
+    $('[data-role=expand]').on 'click', @click
+
+  click: ->
+    $(this).toggleClass 'expander-hidden'
+
+
 $ ->
 
   new RLH.Flickr('39333276@N07', '5226a951238722dbb74e03a6acce5ad5')
   new RLH.Modal()
+  new RLH.Drawers()
 
   menuToggle = $('#js-mobile-menu').unbind()
   $('#js-navigation-menu').removeClass 'show'
@@ -81,11 +91,6 @@ $ ->
     $('#js-navigation-menu').slideToggle ->
       if $('#js-navigation-menu').is(':hidden')
         $('#js-navigation-menu').removeAttr 'style'
-
-  expanderTrigger = document.getElementById('js-expander-trigger')
-  expanderContent = document.getElementById('js-expander-content')
-  $('#js-expander-trigger').click ->
-    $(this).toggleClass 'expander-hidden'
 
   do (jQuery) ->
     jQuery.mark = jump: (options) ->
