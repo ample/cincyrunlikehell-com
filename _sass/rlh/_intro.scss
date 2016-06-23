@@ -4,29 +4,39 @@
   position: relative;
 
   a {
-    @include section-links(#89c2ea);
+    @include section-links(#fff);
   }
 
   #intro-footer {
     margin-top: modular-scale(1);
     @include clearfix;
-    .intro-footer--img {
-      float: left;
-      padding-right: modular-scale(3);
 
-      @include media($mobile) {
-        float: none;
-        img {
-          display: block;
-          margin: 0 auto;
+    .intro-footer--events {
+      @include media($desktop) {
+        @include span-columns(5);
+      }
+      ul {
+        font-size: .85em;
+        margin-top: modular-scale(2);
+        @include media($desktop) {
+          border-left: 1px solid rgba(#fff, 0.1);
+          padding-left: modular-scale(2);
+        }
+        strong {
+          font-size: 1.1em;
         }
       }
     }
+    .intro-footer--img {
+      @include media($desktop) {
+        @include span-columns(3);
+      }
+    }
     .intro-footer--text {
-      padding: modular-scale(4) 0 0;
-
-      @include media($mobile) {
-        padding: modular-scale(2) 0;
+      margin: modular-scale(1) 0 0;
+      @include media($desktop) {
+        margin: modular-scale(4) 0 0;
+        @include span-columns(4);
       }
     }
   }
