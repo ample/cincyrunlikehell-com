@@ -1,5 +1,5 @@
 #cause {
-  background: url(/images/cause_bg.gif) 0 0;
+  background: url($baseurl + "/images/cause_bg.gif") 0 0;
 
   a {
     @include section-links(#89c2ea);

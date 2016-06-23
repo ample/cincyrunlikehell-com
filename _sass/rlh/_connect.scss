@@ -1,5 +1,5 @@
 #connect {
-  background: url(/images/connect_bg.gif) left bottom no-repeat #221200;
+  background: url($baseurl + "/images/connect_bg.gif") left bottom no-repeat #221200;
 
   a {
     @include section-links(#b96756);

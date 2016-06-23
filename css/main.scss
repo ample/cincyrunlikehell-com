@@ -3,6 +3,8 @@
 
 @charset "utf-8";
 
+$baseurl: '{{ site.baseurl }}';
+
 @import "base/reset";
 @import "bourbon/bourbon";
 @import "rlh/grid-settings";

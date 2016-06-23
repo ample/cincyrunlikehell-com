@@ -1,5 +1,5 @@
 #party {
-  background: url(/images/party_bg.jpg) 0 0;
+  background: url($baseurl + "/images/party_bg.jpg") 0 0;
 
   a {
     @include section-links(#e0575f);
