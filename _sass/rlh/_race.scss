@@ -1,5 +1,5 @@
 #race {
-  background: url(/images/race_bg.jpg) 0 0;
+  background: url($baseurl + "/images/race_bg.jpg") 0 0;
 
   a {
     @include section-links(#89c2ea);
@@ -30,7 +30,7 @@
     padding: 0;
     .slick-initialized {
       background: $dark-gray;
-      background-image: url('/images/loading.svg');
+      background-image: url($baseurl + "/images/loading.svg");
       background-repeat: no-repeat;
       background-position: center center;
 

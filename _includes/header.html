@@ -1,7 +1,7 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="http://cincinnati.cff.org/RLH" class="register">
-      <img alt="Nav_register" class="roll btn-register" src="/images/nav_register.png">
+      <img alt="Nav_register" class="roll btn-register" src="{{ '/images/nav_register.png' | prepend: site.baseurl }}">
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
@@ -16,6 +16,6 @@
   </div>
   <div class="subheader">
     <h1>2016 Run Like Hell XXV</h1>
-    <p>7:30pm Friday, October 23rd, 2015</p> <p>3614 Woodburn Ave. (<a href="http://www.gmap-pedometer.com/?r=6642580">map</a>)</p>
+    <p>{{ site.details.when }}</p> <p>{{ site.details.where }} (<a href="{{ site.details.map_url }}">map</a>)</p>
   </div>
 </header>

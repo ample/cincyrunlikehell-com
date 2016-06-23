@@ -1,5 +1,5 @@
 #sponsor {
-  background: url(/images/sponsor_bg.gif) 0 0;
+  background: url($baseurl + "/images/sponsor_bg.gif") 0 0;
 
   a {
     @include section-links(#fff);
