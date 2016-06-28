@@ -71,12 +71,12 @@
   #sponsor-logo-yes {
     background-color: #000;
     border: 1px solid #363636;
-    padding: modular-scale(2) modular-scale(1);
+    padding: modular-scale(2) modular-scale(2);
     text-align: center;
 
     li {
       display: inline-block;
-      padding: modular-scale(-2);
+      padding: modular-scale(-1);
     }
   }
 }
