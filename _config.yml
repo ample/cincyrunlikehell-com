@@ -13,7 +13,7 @@ contact:
   phone_ext: 12
   
 # TODO Update these values when we switch to TLD.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cincyrunlikehell.com" # the base hostname & protocol for your site
 
 # Build settings
