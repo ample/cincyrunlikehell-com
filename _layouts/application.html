@@ -36,12 +36,13 @@
 </head>
 <body>
 
-  <br><br>
-  <center>
-    <a href="http://cff.org"><img src="{{ '/images/intro_logo.png' | prepend: site.baseurl }}" alt="" /></a>
-    <h1 style="color: #DDD;">2016 Details Coming Soon...</h1>
-  </center>
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
 
+  <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="{{ "/javascripts/application.js" | prepend: site.baseurl }}"></script>
 
 </body>
 </html>
