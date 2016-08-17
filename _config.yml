@@ -7,10 +7,9 @@ cff:
   address: Cystic Fibrosis Foundation, 4420 Carver Woods Drive, Cincinnati, OH 45242
   email: cincinnati@cff.org
 contact:
-  name: Laura Morgan
-  email: lmorgan@cff.org
+  name: Kim Harrison
+  email: kharrison@cff.org
   phone: 513-533-9300
-  phone_ext: 12
 
 # TODO Update these values when we switch to TLD.
 baseurl: "" # the subpath of your site, e.g. /blog
